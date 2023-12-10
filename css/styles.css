@@ -749,7 +749,7 @@ button {
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.04em;
 
-  display: inline-flex;
+  
 }
 .chackmark-link {
   text-decoration: underline;
