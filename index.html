@@ -610,14 +610,15 @@
         <div class="subscribe-container">
           <p class="subscribe-title">Subscribe</p>
           <form class="subscribe-form">
-            <label for="subscribe"></label>
-            <input
-              class="subscribe-form-input"
-              id="subscribe"
-              type="email"
-              placeholder="E-mail"
-            />
-            <button  class="subscribe-form-button" type="submit">
+            <label class="subscribe-form-label">
+              <input
+                class="subscribe-form-input"
+                name="email"
+                type="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-form-button" type="submit">
               Subscribe
               <svg class="icon-frame" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-frame"></use>
@@ -641,14 +642,14 @@
         </p>
         <form class="form" name="contacts">
           <div class="review-form-field-wrapper">
-            <label class="form-label" for="name"> Name</label>
+            <label class="form-label" for="user-name"> Name</label>
 
             <div class="form-input-container">
               <input
                 class="form-input"
-                id="name"
+                id="user-name"
                 type="text"
-                name="name"
+                name="user-name"
                 title="Varvara"
                 required
               />
@@ -691,26 +692,27 @@
           </div>
 
           <div class="review-form-comment-wrapper">
-            <label class="form-label" for="comment">Comment</label>
+            <label class="form-label" for="user-comment">Comment</label>
             <textarea
               class="form-input-comment"
-              id="comment"
-              name="comment"
-              placeholder="text input"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
             ></textarea>
           </div>
 
           <div class="review-form-checkbox-wrapper">
             <input
               class="form-input-check visually-hidden"
-              id="chekmark"
+              id="user-privacy"
+              name="user-privacy"
               type="checkbox"
               value="true"
               required
             />
-            <label class="checkmark-label" for="chekmark">
+            <label class="checkmark-label" for="user-privacy">
               <span class="review-form-own-checkbox">
-                <svg class="review-form-own-checkbox-icon">
+                <svg class="review-form-own-checkbox-icon" width="10" height="8">
                   <use
                     href="./images/symbol-defs.svg#icon-check"
                     width="10"
@@ -720,8 +722,7 @@
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a class="" href=""
-                ><span class="chackmark-link"> Privacy Policy</span></a
+              <a class="chackmark-link" href=""> Privacy Policy</a
               ></label
             >
           </div>
