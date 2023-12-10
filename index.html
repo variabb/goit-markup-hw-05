@@ -606,17 +606,36 @@
             </li>
           </ul>
         </div>
+        <!-- Subscribe -->
+        <div class="subscribe-container">
+          <p class="subscribe-title">Subscribe</p>
+          <form class="subscribe-form">
+            <label for="subscribe"></label>
+            <input
+              class="subscribe-form-input"
+              id="subscribe"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button  class="subscribe-form-button" type="submit">
+              Subscribe
+              <svg class="icon-frame" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
+    </footer>
 
-          <!--------------------- backdrop------------------ -->
-    
+    <!--------------------- backdrop------------------ -->
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="close-btn">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-        <div class="backdrop is-open">
         <p class="form-description">
           Leave your contacts and we will call you back
         </p>
@@ -673,7 +692,7 @@
 
           <div class="review-form-comment-wrapper">
             <label class="form-label" for="comment">Comment</label>
-            <textarea 
+            <textarea
               class="form-input-comment"
               id="comment"
               name="comment"
@@ -682,11 +701,10 @@
           </div>
 
           <div class="review-form-checkbox-wrapper">
-            <input 
+            <input
               class="form-input-check visually-hidden"
               id="chekmark"
               type="checkbox"
-              
               value="true"
               required
             />
@@ -701,7 +719,10 @@
                   ></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the <a class="" href=""><span class="chackmark-link">  Privacy Policy</span></a></label
+              I accept the terms and conditions of the
+              <a class="" href=""
+                ><span class="chackmark-link"> Privacy Policy</span></a
+              ></label
             >
           </div>
           <button class="form-button" type="submit">
@@ -710,8 +731,5 @@
         </form>
       </div>
     </div>
-
-
-    </footer>
   </body>
 </html>
