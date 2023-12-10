@@ -607,10 +607,8 @@
           </ul>
         </div>
       </div>
-    </footer>
 
-    <!--------------------- backdrop------------------ -->
-    <div class="backdrop is-open">
+      <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="close-btn">
           <svg class="close-icon" width="8" height="8">
@@ -673,19 +671,20 @@
 
           <div class="review-form-comment-wrapper">
             <label class="form-label" for="comment">Comment</label>
-            <textarea
+            <textarea 
               class="form-input-comment"
               id="comment"
               name="comment"
+              placeholder="text input"
             ></textarea>
           </div>
 
           <div class="review-form-checkbox-wrapper">
-            <input
+            <input 
               class="form-input-check visually-hidden"
               id="chekmark"
               type="checkbox"
-              placeholder="text input"
+              
               value="true"
               required
             />
@@ -709,5 +708,9 @@
         </form>
       </div>
     </div>
+    </footer>
+
+    <!--------------------- backdrop------------------ -->
+    
   </body>
 </html>
